@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Biodata{% endblock %}
+{% block page_title %}Biodata Santri{% endblock %}
+{% block subtitle %}Identitas Lengkap{% endblock %}
+
+{% block content %}
+  <section class="box biodata-card">
+    <div class="biodata-head">
+      <img src="{% static 'images/avatar.jpg' %}" alt="Foto Santri" class="avatar">
+      <div>
+        <h3>Khosyi Abqory Prayata</h3>
+        <p class="muted">Santri Kelas XI — HSI Boarding School</p>
+        <div class="chips">
+          <span class="chip">Tahfidz</span>
+          <span class="chip">Programming</span>
+          <span class="chip">Public Speaking</span>
+          <span class="chip">Bahasa arab</span>
+          <span class="chip">Agama</span>
+        </div>
+      </div>
+    </div>
+
+    <table class="data-table">
+      <tr><th>Nama Lengkap</th><td>Khosyi Abqory Prayata</td></tr>
+      <tr><th>Tempat, Tgl Lahir</th><td>Sanggau, 05 April 2010</td></tr>
+      <tr><th>Jenis Kelamin</th><td>Laki-laki</td></tr>
+      <tr><th>Alamat</th><td>Kalimantan barat, kota sanggau</td></tr>
+      <tr><th>Hobi</th><td>Membaca, Coding, Olahraga, </td></tr>
+      <tr><th>Cita-cita</th><td>Investor &amp; Software Engineer</td></tr>
+      <tr><th>Email</th><td>khosyiprayata@gmail.com </td></tr>
+      <tr><th>No HP</th><td>0851-3886-7524</td></tr>
+      <tr><th>Pendidikan</th><td>SMA HSI Boarding School</td></tr>
+    </table>
+  </section>
+{% endblock %}

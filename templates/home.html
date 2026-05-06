@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Portfolio Siswa{% endblock %}
+{% block page_title %}Portfolio Project Siswa{% endblock %}
+{% block subtitle %}Kumpulan karya digital siswa{% endblock %}
+
+{% block content %}
+  <section class="hero">
+    <div class="hero-badge">✨ Karya Digital Santri</div>
+    <h2 class="hero-title">Selamat Datang di <span class="grad">website profile saya</span></h2>
+    <p class="hero-desc">“Tempat karya, ilmu, dan semangat belajar
+       tumbuh dalam naungan adab dan ketekunan,
+       dengan harapan setiap langkah dan karya yang dihasilkan
+       dapat memberi manfaat dan membawa kebaikan.”</p>
+  </section>
+
+  <section class="box">
+    <h3 class="section-title">Daftar Project</h3>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-thumb thumb-1">🕌</div>
+        <div class="project-body">
+          <span class="tag"></span>
+          <h4>Website Profile Saya</h4>
+          <a class="btn-primary" href="{% url 'santri_home' %}">Masuk ke Website →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+{% endblock %}

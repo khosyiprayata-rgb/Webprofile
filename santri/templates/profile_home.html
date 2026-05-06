@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Beranda{% endblock %}
+{% block page_title %}HSI Boarding School{% endblock %}
+{% block subtitle %}Website Profil Saya{% endblock %}
+
+{% block content %}
+  <section class="hero hero-profile">
+    <div class="hero-badge">📖 ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللّٰهِ وَبَرَكَاتُهُ</div>
+    <h2 class="hero-title">Selamat Datang di <span class="grad">Profil Saya</span></h2>
+    <p class="hero-desc">Mengenal lebih dekat perjalanan belajar dan aktivitas saya di HSI Boarding School.</p>
+  </section>
+
+  <section class="box">
+    <h3 class="section-title">Pengantar</h3>
+    <p>Selamat datang di website profil saya. Di sini Anda dapat melihat biodata, jadwal harian, galeri kegiatan, hingga memberi feedback untuk pengembangan website ini.</p>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="stat-num">136+</div><div class="stat-label">Santri Aktif</div></div>
+      <div class="stat"><div class="stat-num">4</div><div class="stat-label">Tahun Berdiri</div></div>
+    </div>
+  </section>
+
+  <section class="box">
+    <h3 class="section-title">Jelajahi Website</h3>
+    <div class="link-grid">
+      <a href="{% url 'biodata' %}" class="link-card"><span>👤</span><b>Biodata</b><small>Identitas santri</small></a>
+      <a href="{% url 'jadwal' %}" class="link-card"><span>📅</span><b>Jadwal</b><small>Aktivitas harian</small></a>
+      <a href="{% url 'galeri' %}" class="link-card"><span>🖼️</span><b>Galeri</b><small>Dokumentasi</small></a>
+      <a href="{% url 'feedback' %}" class="link-card"><span>💬</span><b>Feedback</b><small>Saran &amp; kritik</small></a>
+    </div>
+  </section>
+{% endblock %}
